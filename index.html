@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Diario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Il Mio Diario</h1>
+            <p class="subtitle">I tuoi pensieri, sempre con te</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Sezione Nuova Nota -->
+            <div class="card new-entry">
+                <h2>✍️ Nuova Nota</h2>
+                <input type="text" id="titleInput" placeholder="Titolo della nota..." maxlength="100">
+                <textarea id="contentInput" placeholder="Scrivi qui i tuoi pensieri..."></textarea>
+                <button id="saveBtn" class="btn btn-primary">Salva Nota</button>
+            </div>
+
+            <!-- Sezione Ricerca -->
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="🔍 Cerca nelle tue note...">
+            </div>
+
+            <!-- Sezione Note Salvate -->
+            <div id="notesContainer" class="notes-container">
+                <p class="empty-message">Nessuna nota ancora. Inizia a scrivere!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Il Mio Diario | <button id="deleteAllBtn" class="btn-danger-small">Cancella Tutto</button></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
